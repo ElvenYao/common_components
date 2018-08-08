@@ -1,0 +1,41 @@
+:global(.CodeMirrorCode .CodeMirror) {
+    height: 475px;
+}
+
+:global(.CodeMirrorCode .CodeMirror pre.CodeMirror-placeholder) {
+    color: #999;
+}
+
+#container {
+    display: flex;
+    border: 1px solid #bbb;
+}
+.left,
+.right {
+    flex: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    word-wrap: break-word;
+    /*overflow-y: scroll;*/
+    background-color: #ffffff;
+}
+
+.preview {
+    overflow-y: scroll;
+}
+
+:global(.divImg) {
+    text-align: center;
+}
+
+:global(.divImg img) {
+    max-width: 100%;
+    /*max-height: 480px;*/
+}
+
+.markdownEditor .ant-card-body {
+    padding: 0;
+}

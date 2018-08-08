@@ -1,0 +1,134 @@
+.previewClick:hover {
+    cursor: pointer;
+}
+
+.preview {
+    padding-bottom: 0 !important;
+    position: unset !important;
+}
+
+.vertical-center-modal {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.vertical-center-modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+}
+
+:global(.vertical-center-modal img) {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.vertical-center-modal .ant-modal {
+    display: inline-block;
+    vertical-align: middle;
+    top: 0;
+    text-align: left;
+}
+
+:global(.vertical-center-modal .ant-modal-content) {
+    height: 100%;
+    box-shadow: unset;
+    -webkit-box-shadow: unset;
+    background-color: transparent;
+}
+
+:global(.vertical-center-modal .ant-modal-close) {
+    color: white;
+}
+
+:global(.vertical-center-modal .ant-modal-content .ant-modal-body) {
+    height: 100%;
+    background-color: transparent;
+}
+
+:global(.vertical-center-modal .slick-slider) {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:global(.vertical-center-modal .slick-list) {
+    width: 72%;
+    height: 72%;
+}
+:global(.vertical-center-modal .slick-list .slick-track) {
+    height: 100%;
+}
+
+:global(.vertical-center-modal
+        .slick-list
+        .slick-track
+        .slick-slide
+        div:first-child) {
+    height: 100%;
+}
+
+:global(.vertical-center-modal button.slick-arrow) {
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.06);
+}
+:global(.vertical-center-modal button.slick-arrow:hover) {
+    background: rgba(255, 255, 255, 0.16);
+}
+:global(.vertical-center-modal button.slick-arrow:focus) {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+:global(.vertical-center-modal button.slick-arrow.slick-next) {
+    position: fixed;
+    right: 32px;
+}
+
+:global(.vertical-center-modal button.slick-arrow.slick-prev) {
+    position: fixed;
+    left: 32px;
+}
+
+:global(.vertical-center-modal .slick-dots) {
+    bottom: 10%;
+}
+
+:global(.vertical-center-modal .slick-dots li) {
+    margin: 0 2px;
+}
+
+.imgDiv {
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+}
+
+.imgDiv img {
+    object-fit: contain;
+}
+.nextArrow {
+    width: 48px;
+    height: 47px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 0;
+    border-radius: 4px;
+    position: fixed;
+    right: 32px;
+    cursor: pointer;
+}
+
+.previewArrow {
+    width: 48px;
+    height: 47px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 0;
+    border-radius: 4px;
+    position: fixed;
+    left: 32px;
+    cursor: pointer;
+}
